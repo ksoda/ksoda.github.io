@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/nix-installer-action@v9
+        with:
+          channel: "25.05"
       - uses: DeterminateSystems/magic-nix-cache-action@v6
       - run: nix develop -c pnpm install --frozen-lockfile
       - run: nix develop -c pnpm lint
