@@ -1,0 +1,5 @@
+{
+  "$schema": "https://biomejs.dev/schemas/latest.json",
+  "linter": {"enabled": true},
+  "formatter": {"enabled": true}
+}
