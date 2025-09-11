@@ -12,5 +12,5 @@ This project hosts a curriculum vitae site built with [Eleventy](https://www.11t
 - Do not commit the `_site` output.
 
 ## Tasks
-- [ ] Nix installation failed (command not found / 403). Ensure Nix is available to run development commands.
-- [ ] Development environment currently uses Node 20; upgrade to Node.js v24 to satisfy engine requirements.
+- [ ] Nix installation still fails with HTTP 403; ensure Nix is available to run development commands.
+- [x] Development environment now uses Node.js v24 as specified by `.node-version` and `flake.nix`.
