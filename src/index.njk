@@ -1,0 +1,18 @@
+---
+layout: base
+title: Curriculum Vitae
+---
+<h1>{{ cv.name }}</h1>
+<p>{{ cv.summary }}</p>
+<h2>Experience</h2>
+<ul>
+{% for exp in cv.experiences %}
+  <li><strong>{{ exp.role }}</strong> at {{ exp.company }} ({{ exp.period }}) - {{ exp.description }}</li>
+{% endfor %}
+</ul>
+<h2>Education</h2>
+<ul>
+{% for ed in cv.education %}
+  <li>{{ ed.degree }} at {{ ed.school }} ({{ ed.period }})</li>
+{% endfor %}
+</ul>
