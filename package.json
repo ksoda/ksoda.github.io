@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "eleventy",
-    "prebuild": "pnpm run compile && cp -r src/_includes dist/_includes && cp src/index.njk dist/index.njk && mv dist/_data/cv.js dist/_data/cv.cjs",
+    "prebuild": "pnpm run compile && rm -rf dist/_includes && cp -r src/_includes/. dist/_includes && cp src/index.njk dist/index.njk && mv dist/_data/cv.js dist/_data/cv.cjs",
     "compile": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "biome lint ."
